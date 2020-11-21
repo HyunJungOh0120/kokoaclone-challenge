@@ -36,6 +36,10 @@
   transition: border-color 0.3s ease-in-out;
 }
 
+#login-form input[type="submit"] {
+  box-shadow: 0 12px 20px -12px var(--green);
+}
+
 #login-form input::placeholder {
   color: rgba(0, 0, 0, 0.4);
 }

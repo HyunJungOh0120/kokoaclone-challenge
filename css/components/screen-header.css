@@ -6,9 +6,11 @@
   position: fixed;
   box-sizing: border-box;
   width: 100%;
-  top: 40px;
-  z-index: 11;
-  background-color: var(--background-color);
+  top: 37px;
+  background-color: var(--red);
+  color: var(--background-color);
+  border-top-left-radius: 45px;
+  border-top-right-radius: 45px;
 }
 
 .screen-header__title {

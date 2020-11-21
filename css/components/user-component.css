@@ -1,5 +1,11 @@
 .user-component {
   display: flex;
+  margin-bottom: 10px;
+}
+
+.user-component:nth-child(2) {
+  border-bottom: var(--green) 1px solid;
+  padding-bottom: 15px;
 }
 
 .user-component,

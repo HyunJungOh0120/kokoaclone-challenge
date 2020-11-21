@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap");
 @import "reset.css";
 @import "variables.css";
 
@@ -13,8 +13,13 @@
 @import "screens/friends.css";
 
 body {
-  font-family: "Open Sans", sans-serif;
-  height: 100vh;
-  padding-top: 29px;
-  color: #2e363e;
+  font-family: "Poppins", sans-serif;
+  height: 200vh;
+  color: var(--font);
+  background-color: var(--background-color);
+}
+
+.empty-box {
+  background-color: var(--background-color);
+  height: 120px;
 }

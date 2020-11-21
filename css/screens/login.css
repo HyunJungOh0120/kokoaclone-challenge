@@ -1,5 +1,5 @@
 .welcome-header {
-  margin: 90px 0px;
+  margin: 100px 0px;
   text-align: center;
   display: flex;
   flex-direction: column;
@@ -9,7 +9,7 @@
 
 .welcome-header__title {
   margin-bottom: 40px;
-  font-size: 25px;
+  font-size: 35px;
 }
 
 .welcome-header__text {
@@ -28,6 +28,7 @@
   padding: 15px 0px;
   font-size: 18px;
   margin-bottom: 25px;
+  background-color: var(--background-color);
 }
 
 #login-form input:not([type="submit"]) {
@@ -40,12 +41,12 @@
 }
 
 #login-form input:focus {
-  border-color: var(--yellow);
+  border-color: var(--green);
 }
 
 #login-form input[type="submit"] {
-  background-color: var(--yellow);
-  color: var(--brown);
+  background-color: var(--green);
+  color: var(--background-color);
   cursor: pointer;
   padding: 20px 0;
   border-radius: 5px;

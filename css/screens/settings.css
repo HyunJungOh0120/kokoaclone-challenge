@@ -19,3 +19,21 @@
   opacity: 0.6;
   margin-right: 20px;
 }
+
+.settings__setting-column {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.settings-box {
+  background-color: var(--background-color);
+  margin-bottom: 20px;
+  padding: 1px 15px;
+  border-radius: 20px;
+  box-shadow: var(--box-shadow);
+}
+
+.settings__setting:hover {
+  cursor: pointer;
+}

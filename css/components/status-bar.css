@@ -9,6 +9,7 @@
   /* background-color: var(--red); */
   padding-bottom: 20px;
   color: var(--white);
+  z-index: 8;
 }
 
 .status-bar__column {

@@ -17,6 +17,7 @@
 @import "screens/find.css";
 @import "screens/more.css";
 @import "screens/settings.css";
+@import "screens/chat.css";
 
 body {
   /* font-family: "Poppins", sans-serif; */
@@ -24,8 +25,13 @@ body {
     Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
   height: 100vh;
   color: var(--font);
-  background-color: var(--background-color);
   background: linear-gradient(var(--green), 30%, var(--pink-grey));
+}
+
+#chat-screen {
+  background: var(--font);
+  height: 1000vh;
+  color: var(--white);
 }
 
 .empty-box {

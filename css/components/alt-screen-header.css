@@ -8,9 +8,32 @@
   align-items: center;
   justify-content: space-between;
   color: var(--white);
+  z-index: 9;
 }
 
 .alt-header__title {
   font-size: 29px;
   font-weight: 600;
+}
+
+.alt-header__column {
+  width: 33%;
+}
+
+.alt-header__column:nth-child(2) {
+  display: flex;
+  justify-content: center;
+}
+
+.alt-header__column:last-child {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.alt-header__column a {
+  color: var(--white);
+}
+
+.alt-header__column span:last-child {
+  margin-left: 10px;
 }

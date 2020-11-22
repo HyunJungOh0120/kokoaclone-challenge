@@ -1,19 +1,19 @@
 /* ////////////////// Animation //////////////////////////// */
 @keyframes slide-left {
   0% {
-    transform: translateX(90px);
+    transform: translateX(133px);
   }
   10% {
-    transform: translateX(-390px);
+    transform: translateX(-360px);
   }
   50% {
-    transform: translateX(-390px);
+    transform: translateX(-360px);
   }
   60% {
-    transform: translateX(90px);
+    transform: translateX(133px);
   }
   100% {
-    transform: translateX(90px);
+    transform: translateX(133px);
   }
 }
 
@@ -85,6 +85,7 @@
   /* overflow-x: hidden; */
   width: 70%;
   animation: slide-left 6s infinite;
+  animation-delay: 1s;
 }
 
 .add-box__img {

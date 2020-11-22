@@ -17,12 +17,6 @@
   border-radius: 50%;
 }
 
-.screen-header__dot {
-  position: absolute;
-  left: 20px;
-  bottom: 20px;
-}
-
 .badge--new {
   font-size: 10px;
   margin-left: 5px;

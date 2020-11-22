@@ -6,8 +6,9 @@
   top: 0px;
   width: 100%;
   box-sizing: border-box;
-  background-color: var(--background-color);
+  /* background-color: var(--red); */
   padding-bottom: 20px;
+  color: var(--white);
 }
 
 .status-bar__column {

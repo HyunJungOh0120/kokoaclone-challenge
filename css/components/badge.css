@@ -1,0 +1,24 @@
+.badge {
+  background-color: var(--red);
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  font-weight: 600;
+}
+
+.dot {
+  background-color: var(--red);
+  width: 9px;
+  height: 9px;
+  border-radius: 50%;
+}
+
+.screen-header__dot {
+  position: absolute;
+  left: 20px;
+  bottom: 20px;
+}

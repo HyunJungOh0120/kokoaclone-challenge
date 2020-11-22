@@ -7,10 +7,11 @@
   box-sizing: border-box;
   width: 100%;
   top: 37px;
-  background-color: var(--red);
-  color: var(--background-color);
+  /* background-color: var(--red); */
+  color: var(--white);
   border-top-left-radius: 45px;
   border-top-right-radius: 45px;
+  margin-bottom: 10px;
 }
 
 .screen-header__title {
@@ -20,4 +21,16 @@
 
 .screen-header__icons span {
   margin-left: 26px;
+  position: relative;
+}
+
+#header-comment {
+  position: relative;
+}
+#header-plus {
+  position: absolute;
+  font-size: 10px;
+  margin: 3px;
+  left: 13px;
+  background-color: var(--green);
 }

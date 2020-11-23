@@ -7,12 +7,11 @@
   box-sizing: border-box;
   width: 100%;
   top: 37px;
-  /* background-color: var(--red); */
+  background: var(--green);
+  box-shadow: 0 19px 40px -25px rgb(87, 128, 130);
   color: var(--white);
-  border-top-left-radius: 45px;
-  border-top-right-radius: 45px;
   margin-bottom: 10px;
-  z-index: 9;
+  z-index: 8;
 }
 .screen-header__dot {
   position: absolute;

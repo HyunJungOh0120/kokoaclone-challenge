@@ -1,7 +1,23 @@
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: none;
+  }
+}
+
+/* //////////////////////////////////////////////////////////// */
+
 .main-chat {
   display: flex;
+  overflow-y: auto;
+  scroll-behavior: smooth;
   flex-direction: column;
   align-items: center;
+  animation: fadeIn 0.2s linear;
 }
 
 #chatting {
@@ -16,10 +32,50 @@
   font-size: 14px;
 }
 
+@keyframes popupMessage {
+  0% {
+    opacity: 0;
+    transform: translateY(200px);
+  }
+  60% {
+    opacity: 0;
+    transform: translateY(200px);
+  }
+  100% {
+    opacity: 1;
+    transform: none;
+  }
+}
+
 .message-row {
+  transform: translateY(600px);
   display: flex;
   width: 100%;
   margin-bottom: 25px;
+  will-change: transform;
+  animation: popupMessage 0.7s ease-in-out forwards;
+}
+
+.message-row:nth-child(3) {
+  animation-delay: 0.7s;
+}
+.message-row:nth-child(4) {
+  animation-delay: 1.4s;
+}
+.message-row:nth-child(5) {
+  animation-delay: 2.1s;
+}
+.message-row:nth-child(6) {
+  animation-delay: 2.8s;
+}
+.message-row:nth-child(7) {
+  animation-delay: 3.5s;
+}
+.message-row:nth-child(8) {
+  animation-delay: 4.2s;
+}
+.message-row:nth-child(9) {
+  animation-delay: 4.9s;
 }
 
 .message-row img {
@@ -39,6 +95,7 @@
 .message__info {
   display: flex;
   align-items: flex-end;
+  margin-bottom: 10px;
 }
 
 .message__bubble {
@@ -76,6 +133,11 @@
   margin-right: 0px;
 }
 
+#chat-in-pic {
+  width: 100px;
+  height: 100px;
+}
+
 .reply {
   position: fixed;
   bottom: 0;
@@ -86,6 +148,7 @@
   padding: 5px 25px;
   align-items: center;
   box-sizing: border-box;
+  transition: all 0.3s ease-in-out;
 }
 
 .reply .reply__column:first-child {
@@ -101,6 +164,7 @@
   width: 100%;
   border-radius: 20px;
   border: 1px solid var(--font);
+  transition: all 0.3s ease-in-out;
 }
 
 .reply__column i {
@@ -130,4 +194,20 @@
 
 .reply__column button i {
   opacity: 1;
+}
+
+.reply:focus-within .reply__column:first-child,
+.reply:focus-within .fa-smile-wink,
+.reply:focus-within button {
+  opacity: 0;
+  transition: opacity 0.3s ease-in-out;
+}
+
+.reply:focus-within input {
+  width: 95vw;
+  transform: translateX(-13%) translateY(-90px);
+}
+
+.reply:focus-within {
+  transform: translateY(80px);
 }

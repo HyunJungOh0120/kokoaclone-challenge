@@ -48,7 +48,7 @@
 
 .friends-screen__friend-list {
   height: 450px;
-  overflow-y: scroll;
+  overflow-y: auto;
   scroll-behavior: smooth;
   background-color: var(--background-color);
   border-radius: 20px;

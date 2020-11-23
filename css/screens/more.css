@@ -38,8 +38,7 @@
 /* ////////////////////////////////////////////////////////////// */
 
 .more-screen {
-  height: 780px;
-  overflow-y: scroll;
+  overflow-y: auto;
 }
 
 .pay {

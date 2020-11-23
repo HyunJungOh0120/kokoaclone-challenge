@@ -10,6 +10,7 @@
 @import "components/badge.css";
 @import "components/icon-row.css";
 @import "components/alt-screen-header.css";
+@import "components/no-mobile.css";
 
 /* Screens */
 @import "screens/login.css";
@@ -25,12 +26,12 @@ body {
     Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
   height: 100vh;
   color: var(--font);
-  background: linear-gradient(var(--green), 30%, var(--pink-grey));
+  background: linear-gradient(var(--green) 20%, var(--pink-grey) 100%);
+  overflow: auto;
 }
 
 #chat-screen {
   background: var(--font);
-  height: 1000vh;
   color: var(--white);
 }
 

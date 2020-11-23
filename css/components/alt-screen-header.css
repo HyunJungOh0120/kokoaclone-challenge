@@ -23,6 +23,7 @@
 .alt-header__column:nth-child(2) {
   display: flex;
   justify-content: center;
+  width: 40%;
 }
 
 .alt-header__column:last-child {

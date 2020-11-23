@@ -6,7 +6,8 @@
   top: 0px;
   width: 100%;
   box-sizing: border-box;
-  /* background-color: var(--red); */
+  background: var(--green);
+  box-shadow: 0 14px 20px -12px rgb(87, 128, 130);
   padding-bottom: 20px;
   color: var(--white);
   z-index: 8;
